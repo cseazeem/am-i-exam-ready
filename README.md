@@ -4,6 +4,8 @@ A five-minute, 15-question A1 German diagnostic for learners deciding what to pr
 
 App: https://am-i-exam-ready-globio.buffprawn8.chatgpt.site
 
+Code: https://github.com/cseazeem/am-i-exam-ready
+
 Verification: **40 unit tests and 14 desktop/mobile browser tests passed**, including axe accessibility checks on the introduction, quiz and results, light/dark modes, all three verdicts, storage failure and sharing fallback. `npm run build` also passed.
 
 ## Run locally
@@ -96,10 +98,10 @@ React 19, TypeScript, Vite, plain CSS, Vitest and Playwright. No backend, login,
 git init -b main
 git add .
 git commit -m "Build A1 German readiness diagnostic"
-gh repo create exam-ready --public --source=. --remote=origin --push
+gh repo create am-i-exam-ready --public --source=. --remote=origin --push
 ```
 
-The resulting URL is `https://YOUR_USERNAME.github.io/exam-ready/`. These are setup instructions, not a claim that a GitHub repository has already been created.
+The GitHub Pages URL for this repository is `https://cseazeem.github.io/am-i-exam-ready/` once Pages is enabled and its deployment workflow succeeds. The app link above uses Sites hosting.
 
 **Vercel / Netlify:** import the repository; use `npm run build` and output directory `dist`. No environment variables are required. Sites hosting can publish the same static output through `.openai/hosting.json`.
 
